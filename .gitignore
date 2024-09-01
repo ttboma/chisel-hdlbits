@@ -320,11 +320,13 @@ target/
 lib_managed/
 src_managed/
 project/boot/
+project/project
 project/plugins/project/
 
 # Scala-IDE specific
 .scala_dependencies
 .worksheet
+.bloop
 ### Java template
 *.class
 
@@ -339,3 +341,31 @@ project/plugins/project/
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
 hs_err_pid*
 
+
+# Metals
+.metals
+project/metals.sbt
+
+# Eclipse
+bin/
+.classpath
+.project
+.settings
+.cache-main
+
+#User
+/*.vhd
+/*.v
+*.cf
+*.json
+*.vcd
+!tester/src/test/resources/*.vhd
+
+gen/
+simWorkspace/
+tmp/
+null
+
+book
+.DS_Store
+.DS_St
