@@ -21,7 +21,7 @@ object ExamsEce2412013Q4 extends App {
 // https://hdlbits.01xz.net/wiki/Exams/ece241_2013_q4
 class ExamsEce2412013Q4 extends RawModule {
   val clk = IO(Input(Clock()))
-  val reset = IO(Input(Bool())) // Synchronous reset to `true`
+  val reset = IO(Input(Bool())) // Synchronous reset
   val s = IO(Input(UInt(3.W)))
   val fr3 = IO(Output(Bool()))
   val fr2 = IO(Output(Bool()))
