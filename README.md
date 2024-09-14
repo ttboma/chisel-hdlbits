@@ -10,3 +10,4 @@ Please note that these solutions are not necessarily optimal, but rather intende
 
 * In Chisel, individual bit assignment doesn’t work with `UInt` and `Bits`. See <src/main/scala/hdlbits/circuits/Fsm3onehot.scala>
 * In Chisel, cannot set the name of the generated top module name. See <src/main/scala/hdlbits/verilog_language/7458.scala>
+* In Chisel, the generated Verilog file is optimized, making it difficult to inspect directly when you're still learning and the generated DUT isn't correct. In contrast, with SpinalHDL, you can more easily review the generated Verilog to understand its equivalent and identify issues.
