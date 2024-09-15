@@ -7,9 +7,9 @@ import chisel3.util._
 import _root_.circt.stage.ChiselStage
 
 // Generate Verilog sources and save it in file ExamsEce2412013Q4.sv
-object ExamsEce2412013Q4 extends App {
+object HdlBitsExamsEce2412013Q4 extends App {
   ChiselStage.emitSystemVerilogFile(
-    new ExamsEce2412013Q4,
+    new HdlBitsExamsEce2412013Q4,
     firtoolOpts = Array(
       "-disable-all-randomization",
       "-strip-debug-info"
@@ -19,7 +19,7 @@ object ExamsEce2412013Q4 extends App {
 }
 
 // https://hdlbits.01xz.net/wiki/Exams/ece241_2013_q4
-class ExamsEce2412013Q4 extends RawModule {
+class HdlBitsExamsEce2412013Q4 extends RawModule {
   val clk = IO(Input(Clock()))
   val reset = IO(Input(Bool())) // Synchronous reset
   val s = IO(Input(UInt(3.W)))

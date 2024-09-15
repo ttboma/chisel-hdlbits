@@ -7,9 +7,9 @@ import chisel3.util._
 import _root_.circt.stage.ChiselStage
 
 // Generate Verilog sources and save it in file Lemmings4.sv
-object Lemmings4 extends App {
+object HdlBitsLemmings4 extends App {
   ChiselStage.emitSystemVerilogFile(
-    new Lemmings4,
+    new HdlBitsLemmings4,
     firtoolOpts = Array(
       "-disable-all-randomization",
       "-strip-debug-info"
@@ -19,7 +19,7 @@ object Lemmings4 extends App {
 }
 
 // https://hdlbits.01xz.net/wiki/Lemmings4
-class Lemmings4 extends RawModule {
+class HdlBitsLemmings4 extends RawModule {
   val clk = IO(Input(Clock()))
   val areset = IO(
     Input(AsyncReset())
