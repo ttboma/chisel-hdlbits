@@ -56,5 +56,5 @@ class HdlBitsFsmSerial extends RawModule {
   }
 
   // State update
-  done := state === stop && counter === 7.U
+  done := state === idle && counter === 7.U
 }
