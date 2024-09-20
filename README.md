@@ -14,3 +14,4 @@ Please note that these solutions are not necessarily optimal, but rather intende
 * In Chisel, it is more verbose to do bit assignment. For comparison, see `\src\main\scala\hdlbits\circuits\FsmSerialdata.scala:34`.
 * In Chisel, state name does not conflict with module name. See `src\main\scala\hdlbits\circuits\FsmSerialdp.scala:39` for comparison.
 * In Chisel, we can control submodule reset signal less verbosely than SpinalHDL. See `src\main\scala\hdlbits\circuits\FsmSerialdp.scala:52` for example. And SpinalHDL is not.
+* In SpinalHDL, we can adjust generated name of all signal and module, except for some reserved keyword: `in`, `out`, `clock`, `reset`
